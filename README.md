@@ -134,5 +134,5 @@ Este proyecto es **para fines de investigación**. El autor no se hace responsab
 ---
 
 <p align="center">
-  ✨ **¿Preguntas?** Abre un <a href="https://github.com/AdierECO/Red Neuronal Violencia/issues">issue</a> en GitHub  
+  ✨ **¿Preguntas?** Abre un <a href="https://github.com/AdierECO/Red-Neuronal-Violencia/issues">issue</a> en GitHub  
 </p>
