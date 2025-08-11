@@ -1,7 +1,7 @@
 ```markdown
 # Violence Detection System
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+[Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.6%2B-orange)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green)
 
