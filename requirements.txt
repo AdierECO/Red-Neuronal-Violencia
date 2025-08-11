@@ -1,0 +1,8 @@
+opencv-python
+tensorflow>=2.0
+keras
+numpy
+flask
+pillow
+matplotlib
+python-dotenv

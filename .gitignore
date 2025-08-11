@@ -1,0 +1,45 @@
+# Datos de entrenamiento (no subir videos/frames)
+data/violent/
+data/non_violent/
+data/processed/
+
+# Modelos preentrenados (pueden ser muy grandes)
+models/trained_model.h5
+models/yolo/
+
+# Entorno virtual
+venv/
+.env
+.env.local
+.env.development
+.env.production
+
+# Archivos de Python generados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos temporales y de sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos de configuración local
+config_local.py
+settings_local.py
+
+# Archivos de dataset generados
+*.npy
+*.npz
+*.pickle

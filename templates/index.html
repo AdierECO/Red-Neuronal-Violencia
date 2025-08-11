@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Violence Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            margin: 20px auto;
+            width: 640px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #000;
+        }
+        .status {
+            font-size: 24px;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .violence {
+            background-color: #ffcccc;
+            color: #ff0000;
+        }
+        .no-violence {
+            background-color: #ccffcc;
+            color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Violence Detection</h1>
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" width="640">
+    </div>
+    <div id="status" class="status no-violence">Status: No violence detected</div>
+    
+    <script>
+        // Actualizar el estado basado en la detección (esto es un placeholder)
+        // En una implementación real, necesitarías WebSockets para actualizaciones en tiempo real
+        setInterval(() => {
+            fetch('/get_status')  // Necesitarías implementar esta ruta
+                .then(response => response.json())
+                .then(data => {
+                    const statusDiv = document.getElementById('status');
+                    if (data.is_violence) {
+                        statusDiv.textContent = "Status: VIOLENCE DETECTED!";
+                        statusDiv.className = "status violence";
+                    } else {
+                        statusDiv.textContent = "Status: No violence detected";
+                        statusDiv.className = "status no-violence";
+                    }
+                });
+        }, 1000);
+    </script>
+</body>
+</html>
