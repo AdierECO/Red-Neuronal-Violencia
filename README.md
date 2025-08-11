@@ -1,5 +1,3 @@
-Aquí tienes la versión en **Markdown** (`.md`) lista para usar como `README.md` en GitHub, sin etiquetas HTML:
-
 ```markdown
 # Violence Detection System
 
